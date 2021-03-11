@@ -8,7 +8,8 @@ y = ''
 
 if fizzbuzz1.isdigit() and fizzbuzz2.isdigit():  # Проверка на число
     k = int(fizzbuzz1)                           # Счетчик чисел
-    sum = int(fizzbuzz1)                         # Сумма чисел FizzBuzz
+    #sum = int(fizzbuzz1)                         # Сумма чисел FizzBuzz
+    sum = 0
     while k <= int(fizzbuzz2):
         if k % 3 == 0:
             x = 'Fizz'
@@ -20,6 +21,6 @@ if fizzbuzz1.isdigit() and fizzbuzz2.isdigit():  # Проверка на чис�
             y = ''
         k += 1 
     print(f'Сумму чисел из диапазона от {fizzbuzz1} до {fizzbuzz2} включительно, которые делятся и на 3 и на 5 = {str(sum)}')    
-
+    print(k)
 else:
     print('Вы ввели не число!')         
